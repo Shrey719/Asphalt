@@ -60,3 +60,22 @@ function SHS() {
   window.open("https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent")
   window.open("https://www.google.com/search?q=calculator")
 }
+
+// Added BLNKR functionality
+function create(url) {
+  var win = window.open();
+  win.document.body.style.margin = '0';
+  win.document.body.style.height = '100vh';
+  var iframe = win.document.createElement('iframe');
+  iframe.style.border = 'none';
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+  iframe.style.margin = '0';
+  iframe.src = url;
+  win.document.body.appendChild(iframe);
+}
+
+function create_blnkr() {
+  let x = prompt("What site would you like to open? Note that some sites will not work with this")
+  create(x)
+}
