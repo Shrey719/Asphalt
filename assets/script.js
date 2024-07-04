@@ -52,6 +52,6 @@ function create(url) {
 }
 
 function create_blnkr() {
-  let x = prompt("What site would you like to open? Note that some sites will not work with this, and https:// is required")
+  let x = prompt("Where would you like to go? \n At the moment google searches are not supported.")
   create(x)
 }
