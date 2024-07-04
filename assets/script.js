@@ -62,6 +62,6 @@ if (csite == null) {
 }
 document.addEventListener('keydown', function(event) {
   if (event.key === '=') {
-        window.parent.location.href = 'https://www.classroom.google.com';
+        window.parent.location.href = csite;
     }
 });
