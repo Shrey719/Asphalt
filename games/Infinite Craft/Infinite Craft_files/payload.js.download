@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/infinite-craft",{data:[{}],fetch:{},mutations:[]});
