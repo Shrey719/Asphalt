@@ -55,3 +55,13 @@ function create_blnkr() {
   let x = prompt("Where would you like to go? \n At the moment google searches are not supported.")
   create(x)
 }
+// Panic key
+let csite = localStorage.getItem('cloaksite');
+if (csite == null) {
+  csite = 'https://classroom.google.com'
+}
+document.addEventListener('keydown', function(event) {
+  if (event.key === '=') {
+        window.parent.location.href = 'https://www.classroom.google.com';
+    }
+});
