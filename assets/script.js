@@ -37,6 +37,8 @@ function Redir(url) {
 
 // Added BLNKR functionality
 function create(url) {
+  url_enc = Ultraviolet.codec.xor.encode(url)
+  url_enc_prefix = __uv$config.prefix + url_enc
   var win = window.open();
   win.document.body.style.margin = '0';
   win.document.body.style.height = '100vh';
@@ -45,12 +47,11 @@ function create(url) {
   iframe.style.width = '100%';
   iframe.style.height = '100%';
   iframe.style.margin = '0';
-  iframe.src = url;
+  iframe.src = url_enc_prefix;
   win.document.body.appendChild(iframe);
 }
 
 function create_blnkr() {
-  
   let x = prompt("What site would you like to open? Note that some sites will not work with this, and https:// is required")
   create(x)
 }
