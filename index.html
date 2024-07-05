@@ -45,7 +45,6 @@
     </footer>
   </div>
   <script type="text/javascript">
-	if (localStorage.getItem('ads' == 'true')) {
   atOptions = {
 	'key' : 'dd86a8dbd814bf3d7fe04a015e1d0d9b',
 	'format' : 'iframe',
@@ -53,8 +52,14 @@
 		'width' : 728,
 		'params' : {}
 	};
+if (localStorage.getItem('ads') == 'true') 
+{
+  atOptions.height = 0;
+  atOptions.width = 0;
+  atOptions.params.hide_ads = true;
+  atOptions.format = 'doingthissoadsdontshow';
+  atOptions.key = '';
 }
-
 </script>
 <script type="text/javascript" src="//www.topcreativeformat.com/dd86a8dbd814bf3d7fe04a015e1d0d9b/invoke.js"></script>
   <script src="./assets/script.js" defer></script>
