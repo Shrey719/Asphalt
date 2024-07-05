@@ -142,3 +142,8 @@ body {
   cursor: pointer;
   border-radius: 200px;
 }
+
+.button:hover {
+  background-color: #ffffff;
+  color: black;
+}
