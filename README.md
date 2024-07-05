@@ -6,4 +6,3 @@ Can be deployed on any static host, although the proxy part does not work with g
 - A proxy (obviously)
 - A bunch of games
 - Some exploits
-- Settings
