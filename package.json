@@ -1,0 +1,22 @@
+{
+  "name": "asphalt",
+  "version": "1.0.0",
+  "description": "Can be deployed on any static host, although the proxy part does not work with github pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theskid22/Asphalt.git"
+  },
+  "author": "theskid22",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/theskid22/Asphalt/issues"
+  },
+  "homepage": "https://github.com/theskid22/Asphalt#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

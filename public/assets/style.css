@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #151515;
+  background-color: #212121;
   color: white;
   height: 100vh;
   width: 100vw;
@@ -110,7 +110,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #000000;
+  background-color: #151515;
   position: fixed; 
   top: 0; 
   width: 100%; 
@@ -131,7 +131,7 @@ body {
 }
 
 .button {
-  background-color: #000000;
+  background-color: #151515;
   border: none;
   color: rgb(255, 255, 255);
   padding: 15px 32px;
